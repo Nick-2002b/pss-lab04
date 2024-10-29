@@ -38,6 +38,14 @@ public class Smartphone {
         this.hasNFC = hasNFC;
     }
 
+    public String getBrand() {
+        return this.brand;
+    }
+
+    public String getModel() {
+        return this.model;
+    }
+
     public Smartphone(final String brand, final String model) {
         this(brand, model, DEF_SD_SIZE);
     }
