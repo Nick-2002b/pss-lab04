@@ -1,6 +1,11 @@
 plugins { 
     java
-    checkstyle 
+    checkstyle
+    application
+}
+
+application {
+    mainClass.set("it.unibo.encapsulation.TestAllClasses")
 }
 
 repositories{
