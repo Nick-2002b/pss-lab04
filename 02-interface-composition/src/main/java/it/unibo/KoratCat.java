@@ -2,6 +2,12 @@ package it.unibo;
 
 public class KoratCat implements Animal {
 
+    private Diet dieta;
+
+    KoratCat(){
+        this.dieta = new Carnivore();
+    }
+    
     @Override
     public double averageWeight() {
         return 4.5;
@@ -9,12 +15,17 @@ public class KoratCat implements Animal {
 
     @Override
     public boolean canEatVegetable() {
-        return false;
+        return dieta.isCarnivore();
+        // use diet
     }
 
     @Override
     public boolean canEat(Animal a) {
-        return this.averageWeight() > a.averageWeight();
+        // use diet
+        if(this.dieta.isCarnivore() && this.averageWeight() > a.averageWeight()) {
+            return true;
+        }
+        return false;
     }
     
 }
