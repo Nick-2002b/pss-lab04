@@ -2,6 +2,12 @@ package it.unibo;
 
 public class Squirrel implements Animal {
 
+    private Diet dieta;
+
+    Squirrel(){
+        this.dieta = new Herbivore();
+    }
+
     @Override
     public double averageWeight() {
         return 0.681;
@@ -9,12 +15,15 @@ public class Squirrel implements Animal {
 
     @Override
     public boolean canEatVegetables() {
-        return true;
+        return dieta.isHerbivore();
     }
 
     @Override
     public boolean canEat(Animal a) {
-        return this.averageWeight() > a.averageWeight();
+        if(this.dieta.isCarnivore() && this.averageWeight() > a.averageWeight()){
+            return true;
+        }
+        return false;
     }
     
 }
