@@ -3,13 +3,19 @@ package it.unibo;
 public class Omnivore implements Diet {
 
     @Override
-    public boolean canEatVegetables() {
+    public boolean isHerbivore() {
         return true;
     }
 
     @Override
-    public boolean canEatMeat() {
+    public boolean isCarnivore() {
         return true;
     }
+
+    @Override
+    public boolean isOmnibore() {
+        return true;
+    }
+
     
 }
