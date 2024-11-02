@@ -7,7 +7,7 @@ public class SiameseCat implements Animal {
     }
 
     @Override
-    public boolean canEatVegetable() {
+    public boolean canEatVegetables() {
         return false;
     }
 

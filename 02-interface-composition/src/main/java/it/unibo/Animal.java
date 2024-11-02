@@ -2,6 +2,6 @@ package it.unibo;
 
 public interface Animal {
     double averageWeight();
-    boolean canEatVegetable();
+    boolean canEatVegetables();
     boolean canEat(Animal a);
 }

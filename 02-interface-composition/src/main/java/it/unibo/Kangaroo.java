@@ -13,7 +13,7 @@ public class Kangaroo implements Animal {
     }
 
     @Override
-    public boolean canEatVegetable() {
+    public boolean canEatVegetables() {
         return dieta.isHerbivore();
     }
 

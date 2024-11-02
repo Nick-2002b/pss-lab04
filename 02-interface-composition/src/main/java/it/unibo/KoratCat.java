@@ -14,7 +14,7 @@ public class KoratCat implements Animal {
     }
 
     @Override
-    public boolean canEatVegetable() {
+    public boolean canEatVegetables() {
         return dieta.isCarnivore();
         // use diet
     }

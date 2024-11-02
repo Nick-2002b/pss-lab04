@@ -8,7 +8,7 @@ public class Squirrel implements Animal {
     }
 
     @Override
-    public boolean canEatVegetable() {
+    public boolean canEatVegetables() {
         return true;
     }
 
