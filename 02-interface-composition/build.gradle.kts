@@ -5,7 +5,7 @@ plugins {
 }
 
 application {
-    mainClass.set("it.unibo.TestAllClasses")
+    mainClass.set("it.unibo.Test")
 }
 
 repositories{
