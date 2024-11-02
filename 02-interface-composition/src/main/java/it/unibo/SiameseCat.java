@@ -12,7 +12,7 @@ public class SiameseCat implements Animal {
 
     @Override
     public boolean canEatVegetables() {
-        return dieta.isCarnivore();
+        return dieta.isOmnibore();
     }
 
     @Override
