@@ -1,7 +1,8 @@
 package it.unibo;
 
 public interface Diet {
-    boolean canEatVegetables();
-    boolean canEatMeat();
+    boolean isHerbivore();
+    boolean isCarnivore();
+    boolean isOmnibore();
 }
 
