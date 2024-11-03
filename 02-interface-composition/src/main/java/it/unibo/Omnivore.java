@@ -13,7 +13,7 @@ public class Omnivore implements Diet {
     }
 
     @Override
-    public boolean isOmnibore() {
+    public boolean isOmnivore() {
         return true;
     }
 
